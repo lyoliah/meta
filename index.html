@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+    display: inline-grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-column-gap: 5px;
+}
+/* .grid-layout {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 1fr; */
+/* } */
+@media (min-width: 992px) and (max-width: 1199px) {
+.card{ width:30%; }
+}
+/* <input type="checkbox"> */
+        input:checked~header{
+            background: pink;
+            
+        }
+        input:checked~main{
+            background: rgb(238, 171, 38);
+            
+        }
+        input:checked~footer{
+            background: rgb(146, 49, 144);
+            
+        }
+        :root{
+            --color1:rgb(41, 239, 209);
+            --color2:rgb(49, 49, 158);
+            --textColor1:black;
+            --textColor2:white;
+            
+        }
+        body{
+            margin: 0;
+            text-align: center;
+            font-size: 8vh;
+        }
+        header, footer{
+            height: 10vh;
+            background-color: var(--color1);
+            color:var(--textColor1);
+        }
+        main{
+            height: 80vh;
+            background-color: var(--color2);
+            color:var(--textColor2);
+        }
+        .form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cho{
+            height: 300px;
+            width: 300px;
+            animation: sas1 1s 1;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <header>闪翼双星</header>
+    <main>
+        <p>童年玩的闪翼双星 竟然还有1部遗 </p>
+        <article>
+            <img src="image/gbcf.png" class = "cho">
+            <img src="image/хуйобоссаный.png" class = "cho">
+            <img src = "image/my1.png" class = "cho">
+        </article>
+       
+        
+    </main>
+    <form class = "form">
+        <select name="" id="">
+        <option>Arbuz</option>
+        <option>Kino</option>
+        <option>Sok</option>
+        <label >Zostaw komentarz tutaj</label>
+        <textarea name="" id="comment" cols="30" rows="10" placeholder="Twój komentarz"></textarea>
+        </select>
+    </form>
+    
+    <footer>
+        之闪电行动</footer>
+    
+       
+</body>
+</html>
